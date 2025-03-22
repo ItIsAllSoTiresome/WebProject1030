@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Using Bootstrap Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Website Template</title>
+  </head>
+
+  <!-- body content is what is displayed in browser -->
+  <body>
+    <!-- Placeholder for navigation that is in navbar.html-->
+    <div id="nav-placeholder"></div>
+    
+    <div class = "container p-3">  
+      <h1 class = "fw-bold">
+        Internet Information
+      </h1>
+      <p>
+          The Internet has a complex structure. It its simplest form, it is just a network of computers.
+        What is important is that there is a transmission of information between these computers. Since computers only 
+        understand the machine code(0s and 1s), it is important to convert the information that is understandable to humans
+        to the one that is understandable by computers via the process of encoding. Furthermore, since many technological devices
+        have found a continuously deeper integration within our everyday lives, a lot of sensitive information is transmitted through
+        the Internet. As such, it becomes paramount to secure the communication channels that transmit the sensitive information along with 
+        the information itself. Such is done via the process called encryption. Below you will find more detailed information about
+        the Internet, encoding, and encryption
+      </p> 
+    </div>
+    <div class ="container">
+      <h3 class = "fw-bold">
+        The Internet
+      </h3>
+      <div class="container">
+        <h4 class = "fw-bold text-success">The Internet: Components</h4>    
+        <p>There are three fundamental components of the Internet: 
+          networks, protocols, and physical connections</p>
+        <dl>
+          <dt>Networks</dt>
+          <dd>- A computer network is a connection between two or more computers.
+           Such connection is done so that there is sharing of resources, information, 
+           and even services. Networks enable wide-scale communication and collaboration
+          </dd>
+          <dt>Physical Connections</dt>
+            <p>
+              Below are the methods by which the information is transferred over a network.
+              Remember, the information must be transferred as a series of 0s and 1s
+            </p>
+            <dd> <mark>Wires</mark> - These are physical wires that are used to transfer information within a network.
+                          It uses electrical current to send 0s and 1s between connected machines
+            </dd>
+            <dd><mark>Fiber Optics</mark> - Technology that utilizes glass or plastic fibers to transmit information(0s and 1s).
+                                            The technology uses light pulses to transmit the information. The core of the fiber is
+                                            made from silica(pure glass), and these cores are coated with plastic
+            </dd>
+            <dd><mark>Wi-Fi</mark> - a wireless networking technology that utilizes radio waves to transmit information(0s and 1s).
+                                    More specifically, the waves are between 2.4 GHz and 5 GHz and are a form of electromagnetic radiation
+            </dd>
+          <dt>Protocols</dt>
+            <p>
+              Protocols are agreed upon procedures or set of rules that govern certain actions.
+              There are two fundamental protocols that form the Internet, TCP/IP. These protocols
+              are the backbone that define HOW communication on a network occurs
+            </p> 
+            <dd> <mark>IP Protocol</mark> - The Internet Protocol(IP) is a set of rules governing the formatting and transmission of data across 
+                                              the network It is resposnible for several functions:
+          <dd>-It divides the data(information) into small packets. This process is called <a class href = "https://www.geeksforgeeks.org/packet-switching-and-delays-in-computer-network/" target="_blank">packet switching</a>
+          </dd>
+                <dd>-It contains addressing capability that assigns a unique identifier(IP address) 
+                     to each machine on a network. This allows for the correct data packets to arrive at its own unique address. As such, IP protocol 
+                     is also resposnsible for the path that data packets take to grom from the sender, to routers, and, finally, to the sender.
+                     This process is called <a class href = "https://www.cloudflare.com/learning/network-layer/what-is-routing/" target="_blank">routing.</a> 
+                     This is one half of the reliability equation in network communication. 
+                </dd>
+            </dd>
+            <dd><mark>TCP Protocol</mark> - Transmission Control Protocol is a procedure that controls communication between
+                                             machines on a network. The difference between IP and TCP is that IP formats the data itself;
+                                             TCP ensures, and establishes, a reliable connection between communicating machines on a network and assures that 
+                                             the right packets arrive at their destination by checking to make sure that all network packets arrived for any pice of transmitted data.
+                                             Usually the network packets containing data do not take the direct path to the receiver.
+                                             The packets go to different routers until reaching the receiver. Such is because some routers mihgt be overloaded and 
+                                             won't be able to reroute data packets. An appropriate metaphor for inactive routers would be a traffic congestion in real life(except of course data packets can take a different path - unlike the driver stuck in the traffic)
+            </dd>
+            <dd>-If you wish to know more about the overall structure of the Internet. Click on this <a class href = "https://www.youtube.com/watch?v=AYdF7b3nMto" target="_blank">link</a>
+            </dd>
+         <dt>Images of different paths</dt>
+            <dd>-As mentioned before, data packets can take different paths to different routers to reach their inteded destination
+            </dd>
+          <figure class="figure">
+            <img src="https://cdn.glitch.global/d0f5a198-e0de-44da-8244-2c46f5ee60bd/Screenshot%202025-03-21%20202822.jpg?v=1742614128176" class="figure-img img-fluid rounded" alt="A picture showing the path that the data packet can travel.">
+            <figcaption class="figure-caption">One path that a data packets can take. Blue dots indicate routers. Pink path indicates where data packet travels.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="https://cdn.glitch.global/d0f5a198-e0de-44da-8244-2c46f5ee60bd/Screenshot%202025-03-21%20202708.jpg?v=1742614132326" class="figure-img img-fluid rounded" alt="A picture showing the second path that the data packet can take.">
+            <figcaption class="figure-caption">The second path that the data packet can take. Notice the absence of the blue dot. This means that the router is inactive at that location</figcaption>
+          </figure>
+        </dl>
+        <dt>Encoding</dt>
+          <p> Encoding is the process of converting information from one format into another.
+              In this section the information like a decimal number is converted to ASCII and then to binary. Below is a detailed explanation for all 3 of those
+          </p>
+          <dd><mark>Decimal</mark> - Decimal numbering system refers to the system of numbers from 0-9. The numbers carry the weight of base 10 depending on a position.
+                                     As such, the number 123 can be broken down to its individual components. The rightmost number, 3 in this case, represents position 0.
+                                     The weight of the position is 3 * 10^0 = 3. The 2 represents position 1 and its weight is represented by 2*10^1 = 20(the carrot represents an exponent).
+                                     The 1 represents position 2 and its weight is represented by 1*10^2 = 100. Adding all three numbers we get 3+20+100= 123
+          
+          </dd>
+          <dd><mark>Binary</mark> - Binary numbering system only uses 0 and 1 to express information. Just like the binary system, there is weight associated with position. Unlike the binary system,
+                                    the weight of each numbers is base 2. As such, binary number 0111 can be broken down to its individual components. The rightmost 1 represents position 0.
+                                    The weight of the position is 1 * 2^0 = 1. Going one space over to the left, the 1 on that position represents position 1. The weight of the position is 1 * 2^1 = 2. 
+                                    Going one space over to the left, the 1 on that position represents position 2. The weight of the position is 1 * 2^2 = 4. Finally, going left one last time, represent position 3.
+                                    A 0 on that position carries the weight of 0 * 2^3 = 0. Adding all the numbers together converts the binary number to a decimal 1 + 2 + 4 + 0(usually discarded) = 7(in decimal). 
+                                    A single binary position is called a bit, so number 0111 is said to be represented by 4 bits
+                                    
+          
+          </dd>
+           <dd><mark>ASCII</mark> - American Standard Code for Information Interchange, in its original form, used 7-bit binary numbers to represent different numbers, letters, and symbols common in the English language.
+                                    Modern version of ASCII, called extended ASCII, utilize 1 byte, or 8 bits. 
+                                  
+          </dd>
+          <figure class="figure">
+            <img src="https://cdn.glitch.global/d0f5a198-e0de-44da-8244-2c46f5ee60bd/Excel_SpreadSheet_Binary_to_Decimal.jpg?v=1742618648065" class="figure-img img-fluid rounded" alt="A spreadsheet showing Binary to Decimal conversion.">
+            <figcaption class="figure-caption">Binary to decimal converter</figcaption>
+          </figure>
+          
+          <dt>Encryption</dt>
+          <p> Encryption is the process of turning the plain text(data) into cypher text. The purpose behind it is that
+              only individuals who are granted the privelege of decrpytion(turning cypher text into plain text) are granted access to the data. The cypher text is unreadable
+              and serves no purpose other than to be decrypted. There are two methods of encryption: symmetric and asymmetric. They are explained in detail below
+          </p>
+            <dd><mark>Symmetric encryption</mark> - uses the same key for encryption and decrpytion. Presents security risks, but it is still used today. Specifically,
+                                                    it is used by banks for encrypting banking transactions and by large data storage organizations. Once again, though risky, it is faster than asymmetric encryption
+            </dd>
+            <dd><mark>Asymmetric encryption</mark> - uses two different keys for encryption and decrpytion. Usually the pair of keys is called a public and a private key. The public key is used to encrypt and the private key is used to decrypt.
+                                                    Today, it is the most common method of securing over the network communication, or more specifically, client-server interaction. 
+            </dd>
+          <figure class="figure">
+            <img src="https://cdn.glitch.global/d0f5a198-e0de-44da-8244-2c46f5ee60bd/Symmetric_Asymmetric_Encryption.png?v=1742619659359" class="figure-img img-fluid rounded" alt="An image showing a comparison between symmetric and asymmetric enryptions.">
+            <figcaption class="figure-caption">Symmetric vs Asymmetric encryption courtesy of https://www.linkedin.com/pulse/symmetric-asymmetric-encryption-difference-explained-jisa-softech </figcaption>
+          </figure>
+          <p>
+            If you wish for a hands on experience with encryption, click on this <a class href = "https://www.javainuse.com/rsagenerator#google_vignette" target="_blank">link.</a> 
+          </p> 
+          <dt>HTTPS and Security</dt>
+            <dd>-HTTPS uses TLS, or Transport Secure Layer, to establish a secure communication channel between the client
+                 and the server. TLS requires a key exchange between these two entities called the handshake. This means
+                 only the person receiving information can decrypt and only individual sending the information can encrypt it
+            </dd>
+          <figure class="figure">
+            <img src="https://cdn.glitch.global/d0f5a198-e0de-44da-8244-2c46f5ee60bd/Screenshot%202025-03-21%20224243.jpg?v=1742622234768" class="figure-img img-fluid rounded" alt="An image showing a comparison between symmetric and asymmetric enryptions.">
+            <figcaption class="figure-caption">Secure connection symbolized by a lock courtesy of https://www.freepik.com/premium-vector/secure-connection-icon-vector-image-can-be-used-information-security_223886166.htm </figcaption>
+          </figure>
+          <dt>Things you can do</dt>
+            <dd>-Use passwords that are not easily guessable or that can be cracked through a dictionary
+            </dd> 
+            <dd>-Do not go on shady websites, specifically those that do not use HTTPS 
+            </dd> 
+            <dd>-Update your software often as updates patch security vulnerabilities 
+            </dd>   
+    
+            
+      
+        
+      </div>
+    </div>
+
+    <!--  script code to add navbar -->
+    <script>
+      // Load the navigation menu into the placeholder
+      $("#nav-placeholder").load("navbar.html");
+    </script>
+  </body>
+</html>
